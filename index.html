@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Pessoal - Gabriel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+      <div class="cabecalhoConteudo">
+        <h1 class="cabecalhoTitulo">Gabriel Radtke</h1>
+
+        <nav class="menu">
+          <ul class="menuLista">
+            <li><a href="#sobre" class="menuLink">Sobre mim</a></li>
+            <li><a href="#formacao" class="menuLink">Formação</a></li>
+            <li><a href="#portfolio" class="menuLink">Portfólio</a></li>
+            <li><a href="#contato" class="menuLink">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="conteudoPrincipal">
+      <!-- Sobre -->
+      <section id="sobre" class="secao secaoDestaque">
+        <div class="secaoConteudo">
+          <div class="sobreConteudo">
+            <div class="sobreImagem">
+              <img
+                src="fotoGabriel.png"
+                alt="Foto de Gabriel Radtke"
+                class="fotoPerfil"
+              />
+            </div>
+
+            <div class="sobreTexto">
+              <h2 class="secaoTitulo">Sobre mim</h2>
+              <p class="secaoTexto">
+                Meu nome é Gabriel Radtke. Tenho interesse em tecnologia,
+                desenvolvimento web e criação de soluções práticas para
+                facilitar processos do dia a dia.
+              </p>
+              <p class="secaoTexto">
+                Gosto de aprender na prática, desenvolver projetos próprios para
+                meu dia a dia e evoluir meus conhecimentos em HTML, CSS e
+                JavaScript.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formação -->
+      <section id="formacao" class="secao">
+        <div class="secaoConteudo">
+          <h2 class="secaoTitulo">Formação</h2>
+
+          <p class="secaoTexto">
+            Atualmente cursando Ciência da Computação pela Uninter.
+            <br />
+            Trabaho há 13 anos na ABCCC (Associação Brasileira dos Criadores de
+            Cavalos Crioulos) como Supervisor de Logística, onde desenvolvo
+            soluções para gestão de eventos, controle de público e outras
+            demandas que consigo relacionar com tecnologia.
+          </p>
+
+          <h3 class="secaoSubtitulo">Conhecimentos</h3>
+          <ul class="lista">
+            <li class="listaItem">HTML5</li>
+            <li class="listaItem">CSS3</li>
+            <li class="listaItem">JavaScript</li>
+            <li class="listaItem">GitHub</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Portfólio -->
+      <section id="portfolio" class="secao">
+        <div class="secaoConteudo">
+          <h2 class="secaoTitulo">Portfólio</h2>
+
+          <div class="gradeProjetos">
+            <article class="cartaoProjeto">
+              <h3 class="cartaoProjetoTitulo">Plenor - Planner Pessoal</h3>
+              <p class="cartaoProjetoTexto">
+                Projeto real para escalar site web e app mobile pensado na organização de tarefas, compromissos e metas pessoais.
+              </p>
+              <a href="https://www.plenornow.com/login.html" class="cartaoProjetoLink">
+              <img class="imgProjeto" src="/imagens/plenor.png" alt="Imagem do projeto Plenor" class="cartaoProjetoImagem" />
+              </a>
+            </article>
+
+            <article class="cartaoProjeto">
+              <h3 class="cartaoProjetoTitulo">Leitor de QRCode - Ingressos</h3>
+              <p class="cartaoProjetoTexto">
+                Sistema desenvolvido para a ABCCC em 2025 para controle de publico na Prova de mangueira na final do Freio de Ouro.
+              </p>
+              <a href="https://leitorqrcode-radtke.vercel.app/" class="cartaoProjetoLink">
+              <img class="imgProjeto" src="/imagens/leitorQRCode.png" alt="Imagem do projeto QRCode" class="cartaoProjetoImagem" />
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="secao">
+        <div class="secaoConteudo">
+          <h2 class="secaoTitulo">Contato</h2>
+
+          <form id="formularioContato" class="formularioContato">
+            <div class="campoFormulario">
+              <label for="nome" class="campoRotulo">Nome</label>
+              <input type="text" id="nome" class="campoEntrada" />
+            </div>
+
+            <div class="campoFormulario">
+              <label for="email" class="campoRotulo">E-mail</label>
+              <input type="email" id="email" class="campoEntrada" />
+            </div>
+
+            <div class="campoFormulario">
+              <label for="mensagem" class="campoRotulo">Mensagem</label>
+              <textarea id="mensagem" class="campoArea"></textarea>
+            </div>
+
+            <button type="submit" class="botao">Enviar</button>
+            <p id="mensagemRetorno" class="mensagemRetorno"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p class="rodapeTexto">Desenvolvido por Gabriel Radtke</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

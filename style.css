@@ -1,0 +1,301 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Centralização */
+.cabecalhoConteudo,
+.secaoConteudo {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e5e5e5;
+  backdrop-filter: blur(6px);
+}
+
+.cabecalhoConteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.cabecalhoTitulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #205A28;
+}
+
+/* Menu */
+.menuLista {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.menuLink:hover {
+  background-color: #205A28;
+  color: #ffffff;
+}
+
+/* Conteúdo */
+.conteudoPrincipal {
+  padding-top: 30px;
+}
+
+/* Seções */
+.secao {
+  padding: 80px 0;
+  scroll-margin-top: 90px;
+}
+
+.secaoDestaque {
+  padding-top: 100px;
+}
+
+.secaoTitulo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #205A28;
+}
+
+.secaoSubtitulo {
+  font-size: 1.2rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.secaoTexto {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #555555;
+  max-width: 800px;
+}
+
+/* Sobre mim com foto ao lado */
+.sobreConteudo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.sobreImagem {
+  flex-shrink: 0;
+}
+
+.sobreTexto {
+  flex: 1;
+}
+
+.fotoPerfil {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #205A28;
+  display: block;
+}
+
+/* Listas */
+.lista {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.listaItem {
+  margin-bottom: 8px;
+}
+
+/* Portfólio */
+.gradeProjetos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.cartaoProjeto {
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 24px;
+  transition: 0.3s ease;
+}
+
+.cartaoProjeto:hover {
+  transform: translateY(-4px);
+  border-color: #205A28;
+}
+
+.cartaoProjetoTitulo {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #205A28;
+}
+
+.cartaoProjetoTexto {
+  margin-bottom: 16px;
+  color: #555555;
+}
+
+.imgProjeto {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.cartaoProjetoLink {
+  color: #205A28;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cartaoProjetoLink:hover {
+  text-decoration: underline;
+}
+
+/* Formulário */
+.formularioContato {
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 24px;
+  text-align: left;
+
+}
+
+.campoFormulario {
+  margin-bottom: 18px;
+}
+
+.campoRotulo {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.campoEntrada,
+.campoArea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.campoEntrada:focus,
+.campoArea:focus {
+  border-color: #205A28;
+  box-shadow: 0 0 0 3px rgba(32, 90, 40, 0.15);
+}
+
+.campoArea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Botão */
+.botao {
+  background-color: #205A28;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #2f7a36;
+  transform: translateY(-1px);
+}
+
+/* Mensagem */
+.mensagemRetorno {
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #205A28;
+  padding: 24px 0;
+  margin-top: 40px;
+}
+
+.rodapeTexto {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .cabecalhoConteudo {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .menuLista {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .secao {
+    padding: 60px 0;
+  }
+
+  .gradeProjetos {
+    grid-template-columns: 1fr;
+  }
+
+  .sobreConteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fotoPerfil {
+    width: 200px;
+    height: 200px;
+  }
+}
