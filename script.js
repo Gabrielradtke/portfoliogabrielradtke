@@ -6,10 +6,23 @@ const mensagem = document.getElementById("mensagem");
 const mensagemRetorno = document.getElementById("mensagemRetorno");
 const menuBotao = document.getElementById("menuBotao");
 const menu = document.getElementById("menu");
+const botaoTema = document.getElementById("botaoTema");
 
 // Função para mudar o menu em dispositivos móveis
 menuBotao.addEventListener("click", function () {
   menu.classList.toggle("ativo");
+});
+
+// Função para alternar entre temas claro e escuro
+botaoTema.addEventListener("click", function () {
+  document.body.classList.toggle("modoEscuro");
+
+  // troca o ícone
+  if (document.body.classList.contains("modoEscuro")) {
+    botaoTema.textContent = "☀️";
+  } else {
+    botaoTema.textContent = "🌙";
+  }
 });
 
 // Função para validar e-mail
