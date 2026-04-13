@@ -12,7 +12,7 @@ html {
 /* Base */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #1a1a1a;
   line-height: 1.6;
 }
@@ -45,7 +45,7 @@ body {
 .cabecalhoTitulo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #205A28;
+  color: #205a28;
 }
 
 /* Menu */
@@ -65,7 +65,7 @@ body {
 }
 
 .menuLink:hover {
-  background-color: #205A28;
+  background-color: #205a28;
   color: #ffffff;
 }
 
@@ -87,7 +87,7 @@ body {
 .secaoTitulo {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #205A28;
+  color: #205a28;
 }
 
 .secaoSubtitulo {
@@ -124,7 +124,7 @@ body {
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid #205A28;
+  border: 1px solid #205a28;
   display: block;
 }
 
@@ -156,13 +156,13 @@ body {
 
 .cartaoProjeto:hover {
   transform: translateY(-4px);
-  border-color: #205A28;
+  border-color: #205a28;
 }
 
 .cartaoProjetoTitulo {
   font-size: 1.2rem;
   margin-bottom: 12px;
-  color: #205A28;
+  color: #205a28;
 }
 
 .cartaoProjetoTexto {
@@ -178,7 +178,7 @@ body {
 }
 
 .cartaoProjetoLink {
-  color: #205A28;
+  color: #205a28;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
@@ -196,7 +196,6 @@ body {
   padding: 24px;
   margin-top: 24px;
   text-align: left;
-
 }
 
 .campoFormulario {
@@ -225,7 +224,7 @@ body {
 
 .campoEntrada:focus,
 .campoArea:focus {
-  border-color: #205A28;
+  border-color: #205a28;
   box-shadow: 0 0 0 3px rgba(32, 90, 40, 0.15);
 }
 
@@ -236,7 +235,7 @@ body {
 
 /* Botão */
 .botao {
-  background-color: #205A28;
+  background-color: #205a28;
   color: #ffffff;
   border: none;
   border-radius: 10px;
@@ -251,6 +250,15 @@ body {
   transform: translateY(-1px);
 }
 
+/* Menu para mobile */
+.menuBotao {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /* Mensagem */
 .mensagemRetorno {
   margin-top: 16px;
@@ -259,7 +267,7 @@ body {
 
 /* Rodapé */
 .rodape {
-  background-color: #205A28;
+  background-color: #205a28;
   padding: 24px 0;
   margin-top: 40px;
 }
@@ -271,8 +279,13 @@ body {
 
 /* Responsivo */
 @media (max-width: 768px) {
+  .cabecalhoTitulo {
+    text-align: center;
+    align-items: c;
+  }
   .cabecalhoConteudo {
     flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
   }
 
@@ -297,5 +310,24 @@ body {
   .fotoPerfil {
     width: 200px;
     height: 200px;
+  }
+
+  .menuBotao {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu.ativo {
+    display: block;
+  }
+
+  .menuLista {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
   }
 }

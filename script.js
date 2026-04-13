@@ -1,9 +1,16 @@
-// Seleciona os elementos do formulário pelo id
+// Seleciona os elementos do formulário pelo Id
 const formularioContato = document.getElementById("formularioContato");
 const nome = document.getElementById("nome");
 const email = document.getElementById("email");
 const mensagem = document.getElementById("mensagem");
 const mensagemRetorno = document.getElementById("mensagemRetorno");
+const menuBotao = document.getElementById("menuBotao");
+const menu = document.getElementById("menu");
+
+// Função para mudar o menu em dispositivos móveis
+menuBotao.addEventListener("click", function () {
+  menu.classList.toggle("ativo");
+});
 
 // Função para validar e-mail
 function emailValido(emailDigitado) {
